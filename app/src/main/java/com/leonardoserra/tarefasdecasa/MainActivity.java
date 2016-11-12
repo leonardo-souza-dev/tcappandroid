@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             e.putString("guid", guid);
             e.commit();
         }
-        //myWebView.loadUrl("javascript:sample('" + guid + "')");
         myWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
     }
 
